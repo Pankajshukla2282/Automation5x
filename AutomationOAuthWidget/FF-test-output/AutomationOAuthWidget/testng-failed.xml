@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [AutomationOAuthWidget]" junit="false" parallel="false" annotations="JDK">
+  <test name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithValidCredentials(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithValidCredentials">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="test_WidgetCreateAccountWithValidEmail"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

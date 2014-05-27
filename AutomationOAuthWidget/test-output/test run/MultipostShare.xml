@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MultipostShare" failures="1" tests="1" time="650.885" errors="0">
+  <properties/>
+  <testcase name="test_SharingToLinkedIn" time="650.578" classname="com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element css=p#successMsg span#sharedServices not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element css=p#successMsg span#sharedServices not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at com.sharethis.QAAutomation.commonlib.STDoneScreen.stVerifySharedToText(STDoneScreen.java:99)
+	at com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare.test_SharingToLinkedIn(MultipostShare.java:63)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

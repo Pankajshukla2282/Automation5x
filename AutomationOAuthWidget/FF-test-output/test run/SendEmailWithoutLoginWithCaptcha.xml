@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SendEmailWithoutLoginWithCaptcha" failures="1" tests="1" time="1.066" errors="0">
+  <properties/>
+  <testcase name="test_SendEmailWithoutLoginToMultipleAddresses" time="1.065" classname="com.sharethis.QAAutomation.OAuth.Email.SendEmailWithoutLoginWithCaptcha">
+    <failure type="java.lang.RuntimeException" message="Could not contact Selenium Server; have you started it on &apos;localhost:4444&apos; ?
+Read more at http://seleniumhq.org/projects/remote-control/not-started.html
+Connection refused: connect">
+      <![CDATA[java.lang.RuntimeException: Could not contact Selenium Server; have you started it on 'localhost:4444' ?
+Read more at http://seleniumhq.org/projects/remote-control/not-started.html
+Connection refused: connect
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:86)
+	at com.sharethis.QAAutomation.commonlib.STLaunchBrowser.stLaunch(STLaunchBrowser.java:39)
+	at com.sharethis.QAAutomation.OAuth.Email.SendEmailWithoutLoginWithCaptcha.test_SendEmailWithoutLoginToMultipleAddresses(SendEmailWithoutLoginWithCaptcha.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

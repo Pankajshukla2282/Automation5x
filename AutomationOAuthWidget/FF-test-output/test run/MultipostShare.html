@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>TestNG:  MultipostShare</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MultipostShare</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 07 14:02:11 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>650 seconds (650885 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare.test_SharingToLinkedIn()'>test_SharingToLinkedIn<br/><b>Parameters:</b> 1, 0, 13, 0, 15, 8, 0, 7, 10<br/>
+<a href="#Output-5462872" onClick='toggleBox("Output-5462872", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5462872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5462872">
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunch-Open Browser and launch Portal URL [PASS]</strong><br />Successfully launch Publishers Page.<br /><strong>Data used:</strong><br />{BrowserType=*firefox, Port=4444, WindowTitle=Experiential Marketing Forum, URL=http://experientialforum.com/, Localhost=localhost}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{targetXPath=css=span[class*='st_sharethis'] span.stButton, verifyXpath=css=div#outerContainer.st5xM div.qsbMpad div#mainContainer div#welcomeMsg.qsbMhead}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stLaunchOauthWidget-Launch ShareThis OAuth Widget [PASS]</strong><br />OAuth Widget is Successfully launch.<br /><strong>Data used:</strong><br />{}</div><br/>
+<br /><div style ="background-color:#EDEDA9;color:red;"><strong>stClickAndVerifyLink-function is used for clicking on target and verify the opened window's URL [FAIL]<br />Expected is 'Target link is open in new window and url is matching successfully.'but in actual 'Target link is open in new window but title is not matching.'<br />Data used:<br />{VerificationPoints=, PageUrl=https://www.facebook.com/login.php, BreadcrumText=, WindowTitle=Facebook}</strong></div><br/>
+ERROR: Element css=div#content.fb_content div.login_form_container form#login_form div#loginform div.form_row input#email.inputtext not found<br/>
+<br /><div style ="background-color:#EDEDA9;color:green;"><strong>stClickAndVerify-Function for click on element and verify up-coming element [PASS]</strong><br />Getting upcoming object successfully.<br /><strong>Data used:</strong><br />{WelcomeLabel=Testnguser Tho.., targetXPath=css=div#serviceCTAs.sts-cb div.qsbMpad div.footBgColor button#shareButton.emailBright, verifyXpath=css=div#mainContainer div#mainBody div#doneScreen.multiShare, Password=testing123, EmailAddress=testnguserthor@yahoo.com, WindowTitle=Log In | Facebook, WebOrWidget=widget, LoginAs=Facebook, WidgetType=OAuth}</div><br/>
+</div>
+</td>
+<td>650</td>
+<td><div><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element css=p#successMsg span#sharedServices not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at com.sharethis.QAAutomation.commonlib.STDoneScreen.stVerifySharedToText(STDoneScreen.java:99)
+	at com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare.test_SharingToLinkedIn(MultipostShare.java:63)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5462872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5462872'><pre>com.thoughtworks.selenium.SeleniumException: ERROR: Element css=p#successMsg span#sharedServices not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at com.sharethis.QAAutomation.commonlib.STDoneScreen.stVerifySharedToText(STDoneScreen.java:99)
+	at com.sharethis.QAAutomation.OAuth.Sharing.MultipostShare.test_SharingToLinkedIn(MultipostShare.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

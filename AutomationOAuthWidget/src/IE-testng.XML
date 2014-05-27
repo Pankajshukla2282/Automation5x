@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test run">
+
+	<test name="WidgetCreateAccountWithInvalidCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STRDataID" value="4"/>
+			<parameter name="STRExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="3"/>
+			<class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithInvalidCredentials"/>
+		</classes> 
+	</test> 
+
+</suite>
