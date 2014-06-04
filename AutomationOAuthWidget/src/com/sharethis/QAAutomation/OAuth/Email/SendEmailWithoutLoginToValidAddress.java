@@ -69,7 +69,7 @@ public class SendEmailWithoutLoginToValidAddress {
 		 	address bar or Button available on webpage
 		 2. Click on Email chicklet 
 		 **********************************************************************/	
-		comLib.stClickAndVerify(OAUTH_WIDGET_CLOSE_BUTTON, OAUTH_WIDGET_WINDOW, 0, "STOP");
+		//comLib.stClickAndVerify(OAUTH_WIDGET_CLOSE_BUTTON, OAUTH_WIDGET_WINDOW, 0, "STOP");
 		
 		//********** Launch Widget******		
 		launchBrowser.stLaunchOauthWidget(OAUTH_WIDGET, OAUTH_WIDGET_WINDOW, 0, "STOP");
