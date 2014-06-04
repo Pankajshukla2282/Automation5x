@@ -336,48 +336,45 @@ public class STRegisterAndSign {
                             		break Block;
                             	}
                             }
-                            
-                      
-                      if (browser.isElementPresent(EMAIL_ERROR_MSG1))
-                    {
-                         emailerrormsg = browser.getText(EMAIL_ERROR_MSG1);
-
-                        if(emailerrormsg.contains("An account has already been registered with " +
-                                  "this email address.")) 
-                        {
-                            actVal= -1;
-                            break Block;
-                        }
+                                                                                                              
                         else
                         {
                             actVal= -2; /*error msg - Email is not Valid */
                             
                             break Block;
                         }
-                    }
+                    
                       /* Cheking error msg for Password field */
                       
                       if (browser.isElementPresent(PASSWORD_ERROR_MSG))
+                    	  
                     {
                          pwderrormsg = browser.getText(PASSWORD_ERROR_MSG);
 
                         if (pwderrormsg.contains("This field is required."))
+                        	
                         {
                             actVal= -3;/*error msg - Password should be atleast 6 characters long.*/                              
+                            
                             break Block;
                         }
+                        
                     }
                       /* Cheking error msg for Confirm Password field */
                       
                       if (browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG))
+                    	  
                     {
                          cnfpwderrormsg = browser.getText(CONFIRM_PASSWORD_ERROR_MSG);
 
                         if(cnfpwderrormsg.contains("Password and Confirm Password does not match."))
-                        {
+                       
+                        {                        
                             actVal= 4;
                         }
+                        
                         else
+                        
                         {
                             actVal= -3;/*error msg - Password should be atleast 6 characters long.*/
                             
@@ -400,8 +397,7 @@ public class STRegisterAndSign {
                         }
                     }
                       
-                            }
-                            
+                                                 
                       try {
                                   Thread.sleep(5000);
                             } catch (InterruptedException e) {
@@ -411,19 +407,18 @@ public class STRegisterAndSign {
                       if (browser.isElementPresent(COMMON_SIGN_OUT_LINK))
                       {
                             actVal= 0;
+                            
                             break Block;
                       }
                       else
                       {
                             actVal= 3;
+                            
                             break Block;
                       }
-                      
-
-                      
-          }
-    
+    }                         
     }
+           
                       
           catch (SeleniumException sexp)
           {
@@ -435,11 +430,6 @@ public class STRegisterAndSign {
           }
           return returnVal;       
     }
-
-
-}// End class
-
-
-	
-
+}	
+// End class
 
