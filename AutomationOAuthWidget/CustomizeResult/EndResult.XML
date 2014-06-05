@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EndResult>
-<UIDonescreen FAIL="0" PASS="0" SKIP="0">
+<UIDonescreen PASS="0" FAIL="0" SKIP="6">
 <SKIP>
+<ST_WUF_01/>
+<ST_WUF_02/>
+<ST_WUF_03/>
+<ST_WUF_04/>
+<ST_WUF_05/>
+<ST_WUF_06/>
 </SKIP>
 <PASS/>
 <FAIL/>
 </UIDonescreen>
-<CreateAccountAndSignin FAIL="4" PASS="1" SKIP="0">
+<CreateAccountAndSignin PASS="0" FAIL="0" SKIP="0">
 <SKIP>
-
-
-
-
-
 </SKIP>
-<PASS><ST_CAW_03/></PASS>
-<FAIL><ST_CAW_04/><ST_SIW_04/><ST_SIW_05/><ST_CAW_02/></FAIL>
+<PASS/>
+<FAIL/>
 </CreateAccountAndSignin>
-<Emailsharing FAIL="0" PASS="0" SKIP="0">
+<Emailsharing PASS="0" FAIL="0" SKIP="0">
 <SKIP>
 </SKIP>
 <PASS/>
 <FAIL/>
 </Emailsharing>
-<Majorservicessharing FAIL="0" PASS="0" SKIP="0">
+<Majorservicessharing PASS="0" FAIL="0" SKIP="0">
 <SKIP>
 </SKIP>
 <PASS/>
 <FAIL/>
 </Majorservicessharing>
-<Fastshare FAIL="0" PASS="0" SKIP="0">
+<Fastshare PASS="0" FAIL="0" SKIP="0">
 <SKIP>
 </SKIP>
 <PASS/>
 <FAIL/>
 </Fastshare>
-<Other FAIL="0" PASS="0" SKIP="0">
+<Other PASS="0" FAIL="0" SKIP="0">
 <SKIP>
 </SKIP>
 <PASS/>
