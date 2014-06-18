@@ -118,8 +118,8 @@ public class STOAuthSignIn {
 		xPath.add(OAUTH_WIDGET_EMAIL_USERNAME);
 		errorMsg.add("Username on OAuth Widget is not present");
 		
-		xPath.add(OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON);
-		errorMsg.add("FB footer button on OAuth widget is not highlighted after sign in");
+		//xPath.add(OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON);
+		//errorMsg.add("FB footer button on OAuth widget is not highlighted after sign in");
 		
 		comLib.stVerifyObjects(xPath, errorMsg, "");
 		xPath.clear();

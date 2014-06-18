@@ -271,8 +271,8 @@ public class CommonXPath extends TestCase {
     
     public static String OAUth_WIDGET_SIGN_IN_LINK="css=div#footer.sts-cb span#privacyLinks.sts-fr a#signIn";
     public static String OAUTH_WIDGET_EMAIL_GREEN_CHECKED_BUTTON="css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(1)";
-    public static String OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON="css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(2)";
-    public static String OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON1="css=div#serviceCTAs.sts-cb div.qsbMpad div.footBgColor span#services.flL a.serviceDisplay i.emailBright";
+    //public static String OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON="css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(2)";
+    //public static String OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON1="css=div#serviceCTAs.sts-cb div.qsbMpad div.footBgColor span#services.flL a.serviceDisplay i.emailBright";
     //public static String OAUTH_WIDGET_TWITTER_GREEN_CHECKED_BUTTON="css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(3)";
     //public static String OAUTH_WIDGET_LINKEDIN_GREEN_CHECKED_BUTTON="css=div#serviceCTAs.sts-cb>div#services>a.serviceDisplay.checked:nth-child(4)";
     public static String OAUTH_WIDGET_NOT_YOU_LINK="css=div#outerContainer h2#welcomeMsg a#signOutTop";
@@ -294,10 +294,13 @@ public class CommonXPath extends TestCase {
     public static String OAUTH_WIDGET_WORDPRESS_CANCEL_LINK ="css=div#outerContainer div#serviceCTAs.sts-cb a#cancelLink.sts-fr:not(.sts-dn)";
     public static String OAUTH_WIDGET_NON_TEXT_AREA="css=div#outerContainer div#serviceCTAs.sts-cb";
     public static String OAUTH_WIDGET_WIDGGET_ERROR_MESSAGE="css=div#outerContainer div#mainBody div#errorMsg:not(.sts-dn)";
-    public static String OAUTH_WIDGET_SHARE_AGAIN_LINK="css=p#successMsg a#againLink.widgetIcons";
+    //public static String OAUTH_WIDGET_SHARE_AGAIN_LINK="css=p#successMsg a#againLink.widgetIcons";
+    public static String OAUTH_WIDGET_SHARE_AGAIN_LINK="css=div#doneTitle.qsbMhead span.userName a#againLink.backToDefault";
     public static String OAUTH_WIDGET_GET_SHARETHIS_CTA_BUTTON="css=div#toolbarUpsell div#btnShareToolbar.ctaButton";
-    public static String OAUTH_WIDGET_TOOLBAR_UPSELL_IMAGE="css= div#toolbarUpsell span.toolbarImg";
-    public static String OAUTH_WIDGET_TOOLBAR_UPSELL_DIV="css=div#doneScreen:not(.sts-dn) div#relatedShares div#toolbarUpsell";
+    //public static String OAUTH_WIDGET_TOOLBAR_UPSELL_IMAGE="css= div#toolbarUpsell span.toolbarImg";
+    public static String OAUTH_WIDGET_TOOLBAR_UPSELL_IMAGE="css=div#doneScreen.multiShare div.qsbMpad5.msgBot.ctaBot.altBGcta div#multiShare img#multiFF";
+    //public static String OAUTH_WIDGET_TOOLBAR_UPSELL_DIV="css=div#doneScreen:not(.sts-dn) div#relatedShares div#toolbarUpsell";
+    public static String OAUTH_WIDGET_TOOLBAR_UPSELL_DIV="css=div#doneScreen.multiShare div.st5xMfoot.st5xMfootTall2.enabled div.qsbMpad div#multiShareFooter.footBgColor.cntrBtnFoot a button.stBtnFirefox.cntrBtn2";
     //public static String OAUTH_WIDGET_SHARED_TO_TEXT="css=p#successMsg span#sharedServices";
     public static String OAUTH_WIDGET_SHARED_TO_TEXT="css=div#doneScreen.multiShare div#successMsg.qsbMselect div#doneScrMessage span#sharedMsg";
     //public static String OAUTH_WIDGET_EMAIL_SHARE_DETAILS_SECTION="css=form#shareDetails div#emailShareDetails:not(.sts-dn)";

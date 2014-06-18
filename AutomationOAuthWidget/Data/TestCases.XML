@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EndResult>
-<UIDonescreen PASS="0" FAIL="0" SKIP="7">
+<UIDonescreen PASS="0" FAIL="0" SKIP="6">
 <SKIP>
 <ST_WUF_01/>
 <ST_WUF_02/>
 <ST_WUF_03/>
-<ST_WUF_04/>
 <ST_WUF_05/>
 <ST_WUF_06/>
 <ST_DS_01/>
@@ -36,12 +35,8 @@
 <PASS/>
 <FAIL/>
 </CreateAccountAndSignin>
-<Emailsharing PASS="0" FAIL="0" SKIP="4">
+<Emailsharing PASS="0" FAIL="0" SKIP="0">
 <SKIP>
-<ST_ETF_11/>
-<ST_ETF_12/>
-<ST_ETF_13/>
-<ST_ETF_16/>
 </SKIP>
 <PASS/>
 <FAIL/>

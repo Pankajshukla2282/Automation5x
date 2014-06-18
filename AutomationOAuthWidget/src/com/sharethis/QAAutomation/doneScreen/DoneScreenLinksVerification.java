@@ -68,7 +68,7 @@ StringBuffer red = new StringBuffer("1");
 		errorMsg.clear();
 		
 		/* Clicking on any post and closing the newly opened landing window */
-		//comLib.stClickAndVerifyLink(OAUTH_WIDGET_FIRST_POST_LINK, 1, -1, 1, "");
+		comLib.stClickAndVerifyLink(OAUTH_WIDGET_FIRST_POST_LINK, 1, -1, 1, "");
 		
 		status=stDoneScreen.stOpenDoneScreen(OAUTH_WIDGET_FIRST_POST_LINK, 1, "");
 		

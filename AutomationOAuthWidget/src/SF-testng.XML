@@ -192,31 +192,6 @@
 		</classes> 
 	</test> 
 
-	<test name="SendEmailAfterLoginWIthInvalidCredentialsinToField">
-		<classes> 
-			<parameter name="STLBExpVal" value="0"/>
-			<parameter name="STEDataID" value="1"/>
-			<parameter name="STEDataID1" value="2"/>
-			<parameter name="STLDataID" value="14"/>
-			<parameter name="STLExpVal" value="0"/>
-			<parameter name="STBCDataID" value="1"/>
-			<parameter name="STLBDataID" value="4"/>
-			<class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailAfterLoginWIthInvalidCredentialsinToField"/>
-		</classes> 
-	</test> 
-
-	<test name="SendEmailAfterLoginToValidAddress">
-		<classes> 
-			<parameter name="STLBExpVal" value="0"/>
-			<parameter name="STEDataID" value="7"/>
-			<parameter name="STLDataID" value="14"/>
-			<parameter name="STLExpVal" value="0"/>
-			<parameter name="STBCDataID" value="1"/>
-			<parameter name="STLBDataID" value="4"/>
-			<class name="com.sharethis.QAAutomation.OAuth.Email.SendEmailAfterLoginToValidAddress"/>
-		</classes> 
-	</test> 
-
 	<test name="DoneScreenLinksVerification">
 		<classes> 
 			<parameter name="STLBExpVal" value="0"/>
