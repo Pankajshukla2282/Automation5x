@@ -389,25 +389,7 @@ public class STRegisterAndSign {
                     }
                       /* Cheking error msg for Confirm Password field */
                       
-                      if (browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG))
-                    	  
-                    {
-                         cnfpwderrormsg = browser.getText(CONFIRM_PASSWORD_ERROR_MSG);
-
-                        if(cnfpwderrormsg.contains("Password and Confirm Password does not match."))
-                       
-                        {                        
-                            actVal= 4;
-                        }
-                        
-                   //     else
-                        
-                  //      {
-                  //          actVal= -3;/*error msg - Password should be atleast 6 characters long.*/
-                            
-                 //           break Block;
-                 //       }
-                    }
+                      
                       if (browser.isElementPresent(TERMS_ERROR_MSG))
                     {
                         String errormsg = browser.getText(TERMS_ERROR_MSG);
