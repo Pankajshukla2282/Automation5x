@@ -200,4 +200,15 @@
 		</classes> 
 	</test> 
 
+	<test name="WidgetCreateAccountWithInvalidCredentials">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STRDataID" value="4"/>
+			<parameter name="STRExpVal" value="0"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STLBDataID" value="4"/>
+			<class name="com.sharethis.QAAutomation.createAccountUsingWidget.WidgetCreateAccountWithExistingEmail"/>
+		</classes> 
+	</test> 
+
 </suite>

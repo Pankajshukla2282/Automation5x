@@ -93,12 +93,7 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		 4. Click on Register link
 		 5. Try to register without providing any data. 
 		 
-		 * ST_CAW_04- This scenario is to check Creating a new ShareThis account with existing username
-		 1. Browse to any website.
-		 2. Click on ShareThis widget to launch.
-		 3. Click on Sign in link, login window appears.
-		 4. Click on Register link
-		 5. Try to register with existing account.
+		 
 		 **********************************************************************/		
 		STCommonLibrary comLib = new STCommonLibrary();	
 		STRegisterAndSign register = new STRegisterAndSign();
@@ -122,36 +117,10 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		comLib.stLogResult(status, "ST_CAW_03", "", red);
 		browser.click(ERROR_MSG_OK_BUTTON);
 		
-		/* Execution of CAW_04 */ 
-		browser.type(REGISTRATION_EMAIL, "testnguser1001@sharethis.com" );	
 		
-		browser.focus(REGISTRATION_PASSWORD_LABEL);
-		browser.click(REGISTRATION_PASSWORD_LABEL);		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}		
-		browser.type(REGISTRATION_PASSWORD, "testing123" );	
-		
-		browser.focus(REGISTRATION_CONFIRM_PASSWORD_LABEL);
-		browser.click(REGISTRATION_CONFIRM_PASSWORD_LABEL);		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}		
-		browser.type(REGISTRATION_CONFIRM_PASSWORD, "testing123" );	
-		
-		browser.check(TERMS_CHECKBOX);
-		//********* Click on Register Button************
-		status = register.stClickonRegister(-1, "");
-		
-		/* Logging Results for CAW_04 */ 
-		comLib.stLogResult(status, "ST_CAW_04", "", red);
 		
 		/* Execution of SIW_04 */
-		browser.focus(REGISTRATION_PASSWORD_LABEL);
+		browser.focus(REGISTRATION_PASSWORD1);
 		browser.click(REGISTRATION_PASSWORD_LABEL);		
 		try {
 			Thread.sleep(2000);
@@ -160,8 +129,8 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		}		
 		browser.type(REGISTRATION_PASSWORD, "tes" );
 		
-		browser.focus(REGISTRATION_CONFIRM_PASSWORD_LABEL);
-		browser.click(REGISTRATION_CONFIRM_PASSWORD_LABEL);		
+		browser.focus(REGISTRATION_CONFIRM_PASSWORD1);
+		browser.click(REGISTRATION_CONFIRM_PASSWORD);		
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -169,8 +138,8 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		}		
 		browser.type(REGISTRATION_CONFIRM_PASSWORD, "tes" );
 		
-		browser.focus(REGISTRATION_EMAIL_LABEL);
-		browser.click(REGISTRATION_EMAIL_LABEL);
+		browser.focus(REGISTRATION_EMAIL1);
+		browser.click(REGISTRATION_EMAIL);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -191,10 +160,11 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		
 		/* Logging Results for ST_SIW_04 */
 		comLib.stLogResult(status, "ST_SIW_04", "", red);
+		browser.click(ERROR_MSG_OK_BUTTON);
 		
 		/* Execution of SIW_05 */
-		browser.focus(REGISTRATION_PASSWORD_LABEL);
-		browser.click(REGISTRATION_PASSWORD_LABEL);		
+		browser.focus(REGISTRATION_PASSWORD1);
+		browser.click(REGISTRATION_PASSWORD);		
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -202,8 +172,8 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		}		
 		browser.type(REGISTRATION_PASSWORD, "testing123" );
 		
-		browser.focus(REGISTRATION_CONFIRM_PASSWORD_LABEL);
-		browser.click(REGISTRATION_CONFIRM_PASSWORD_LABEL);		
+		browser.focus(REGISTRATION_CONFIRM_PASSWORD1);
+		browser.click(REGISTRATION_CONFIRM_PASSWORD);		
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -212,10 +182,11 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		browser.type(REGISTRATION_CONFIRM_PASSWORD, "different123" );
 		
 		//********* Click on Register Button************
-		status = register.stClickonRegister(-8, "");
+		status = register.stClickonRegister(4, "");
 		
 		/* Logging Results for ST_SIW_)% */
 		comLib.stLogResult(status, "ST_SIW_05", "", red);
+		browser.click(ERROR_MSG_OK_BUTTON);
 		
 			
 		//***********Fill Registartion page**********
@@ -226,6 +197,7 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		status = register.stClickonRegister(-2, "");
 		
 		comLib.stLogResult(status, "ST_CAW_02", "STOP", red);
+		browser.click(ERROR_MSG_OK_BUTTON);
 		
 		comLib.stTearDown(red);
 

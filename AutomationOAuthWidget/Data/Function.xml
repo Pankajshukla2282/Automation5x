@@ -92,7 +92,7 @@
 		<Val5>Password field is required</Val5>
 		<Val6>Confirm Password field is required</Val6>
 		<Val7>Terms are not accepted.</Val7>
-		<Val8>Password length is less than 6 characters</Val8>
+		<Val8>Password should be atleast 6 characters long..</Val8>
 		<Val-8>Passwords do not match and a valid error message appears on create account page</Val-8>
 	</stClickonRegister>
 	

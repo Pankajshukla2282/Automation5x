@@ -47,11 +47,14 @@ public class CommonXPath extends TestCase {
 	public static String REGISTRATION_PASSWORD_LABEL = "css=div.outer div.leftDiv div#register-tip form#register_form input#password-clear1.inputBox";
 	//public static String REGISTRATION_CONFIRM_PASSWORD_LABEL = "css=div#bd-wrapper.w945 div#leftBar.register div#register-tip form#register_form input#confirm-password-clear.inputBox";
 	public static String REGISTRATION_CONFIRM_PASSWORD_LABEL = "css=div.outer div.leftDiv div#register-tip form#register_form input#confirm-password-clear.inputBox";
-	public static String REGISTRATION_EMAIL = "css=div.outer div.leftDiv div#register-tip form#register_form input#username-clear1.inputBox";
+	public static String REGISTRATION_EMAIL1 = "css=div.outer div.leftDiv div#register-tip form#register_form input#username-clear1.inputBox";
+	public static String REGISTRATION_EMAIL = "css=div.outer div.leftDiv div#register-tip form#register_form input#username1.inputBox";
 	//public static String REGISTRATION_EMAIL = "css=div#bd-wrapper.w945 div#leftBar.register div#register-tip form#register_form input#username.inputBox";
 	//public static String REGISTRATION_PASSWORD = "css=div#bd-wrapper.w945 div#leftBar.register div#register-tip form#register_form input#password.inputBox";
-	public static String REGISTRATION_PASSWORD = "css=div.outer div.leftDiv div#register-tip form#register_form input#password-clear1.inputBox";
-	public static String REGISTRATION_CONFIRM_PASSWORD = "css=div.outer div.leftDiv div#register-tip form#register_form input#confirm-password-clear.inputBox";
+	public static String REGISTRATION_PASSWORD = "css=div.outer div.leftDiv div#register-tip form#register_form input#password1.inputBox";
+	public static String REGISTRATION_PASSWORD1 = "css=div.outer div.leftDiv div#register-tip form#register_form input#password-clear1.inputBox";
+	public static String REGISTRATION_CONFIRM_PASSWORD = "css=div.outer div.leftDiv div#register-tip form#register_form input#confirm-password.inputBox";
+	public static String REGISTRATION_CONFIRM_PASSWORD1 = "css=div.outer div.leftDiv div#register-tip form#register_form input#confirm-password-clear.inputBox";
 	//public static String REGISTRATION_CONFIRM_PASSWORD = "html body#site div#site-wrapperNew div div.outer div.leftDiv div#register-tip form#register_form input#confirm-password-clear.inputBox";
 	public static String REGISTRATION_ALREADY_HAVE_AN_ACCOUNT_LINK = "css=div#site-wrapper div#bd-wrapper.w945 div#leftBar.register div.registerContent";
 	public static String REGISTRATION_REGISTERED_USER_SIGNIN_LINK = "css=div#site-wrapper div#bd-wrapper.w945 div#leftBar.register div.registerContent a.registerClass";

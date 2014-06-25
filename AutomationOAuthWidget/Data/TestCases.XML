@@ -16,7 +16,6 @@
 <SKIP>
 <ST_CAW_02/>
 <ST_CAW_03/>
-<ST_CAW_04/>
 <ST_SIW_04/>
 <ST_SIW_05/>
 <ST_CAW_01/>
@@ -31,6 +30,7 @@
 <ST_SIW_11/>
 <ST_SIW_13/>
 <ST_SIW_12/>
+<ST_CAW_04/>
 </SKIP>
 <PASS/>
 <FAIL/>

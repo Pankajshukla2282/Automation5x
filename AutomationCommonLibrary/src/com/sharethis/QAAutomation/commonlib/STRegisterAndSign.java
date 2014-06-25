@@ -4,6 +4,7 @@ package com.sharethis.QAAutomation.commonlib;
 import static com.sharethis.QAAutomation.commonlib.STFunctionLibrary.hm;
 import static com.sharethis.QAAutomation.commonlib.STLaunchBrowser.browser;
 import static com.sharethis.QAAutomation.XPaths.CommonXPath.*;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Vector;
@@ -244,7 +245,16 @@ public class STRegisterAndSign {
                 errorMsg.add("Password field is not present");
                 
                 xPath.add(REGISTRATION_CONFIRM_PASSWORD);
-                errorMsg.add("Password field is not present");              
+                errorMsg.add("Password field is not present");   
+                
+                xPath.add(REGISTRATION_EMAIL1);
+                errorMsg.add("Email Address field is not present");
+                
+                xPath.add(REGISTRATION_PASSWORD1);
+                errorMsg.add("Password field is not present");
+                
+                xPath.add(REGISTRATION_CONFIRM_PASSWORD1);
+                errorMsg.add("confirm password field is not present");
                       
                 comLib.stVerifyObjects(xPath, errorMsg, "STOP");
                 
@@ -263,7 +273,7 @@ public class STRegisterAndSign {
                             
                             System.out.println("No of Window=" + Numberofwindows);
                             
-                            if (Numberofwindows <=1)
+                            if (Numberofwindows ==1)
                             {
                                   /*If no Error messages on Page*/
                                   browser.selectWindow(null);
@@ -319,7 +329,7 @@ public class STRegisterAndSign {
                             /* Cheking error msg for Email field */
                             if(browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG) && browser.isElementPresent(PASSWORD_ERROR_MSG))
                             {
-                          	  if(pwderrormsg.equalsIgnoreCase("Password should be atleast 6 characters long.")&& cnfpwderrormsg.equalsIgnoreCase("Password should be atleast 6 characters long."))
+                          	  if(pwderrormsg.contains("Password should be atleast 6 characters long..")&& cnfpwderrormsg.equalsIgnoreCase("Password should be atleast 6 characters long."))
                           	  {
                           		  actVal = 8;
                           		  break Block; 
@@ -327,37 +337,54 @@ public class STRegisterAndSign {
                           	  
                             }
                             
-                            if(browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG))
-                            {
-                            	System.out.println("cnfpwderrormsg : " +cnfpwderrormsg);
-                            	if(cnfpwderrormsg.equalsIgnoreCase("Password and Confirm Password does not match."))
-                            	{
-                            		actVal=-8;
-                            		break Block;
-                            	}
-                            }
+                       //     if(browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG))
+                       //     {
+                       //     	System.out.println("cnfpwderrormsg : " +cnfpwderrormsg);
+                       //     	if(cnfpwderrormsg.equalsIgnoreCase("Password and Confirm Password does not match."))
+                       //     	{
+                       //     		actVal=-8;
+                       //     		break Block;
+                       //     	}
+                       //     }
                                                                                                               
-                        else
-                        {
-                            actVal= -2; /*error msg - Email is not Valid */
+                            if (browser.isElementPresent(EMAIL_ERROR_MSG))
+                            {
+                                  emailerrormsg = browser.getText(EMAIL_ERROR_MSG);
+                                  if(emailerrormsg.contains("Enter valid email e.g. user@example.com."))
+                                  {
+                                	  actVal= -2; /*error msg - Email is not Valid */
+                                      
+                                      break Block; 
+                                  }
+                                    
+                            }
                             
-                            break Block;
-                        }
+                            if (browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG))                    	  
+                            { 
+                                 cnfpwderrormsg = browser.getText(CONFIRM_PASSWORD_ERROR_MSG);
+                                 System.out.println(cnfpwderrormsg + "  <------" );
+                                if(cnfpwderrormsg.contains("Password and Confirm Password does not match."))
+                               
+                                {             System.out.println("INside Confirm password if condition");           
+                                    actVal= 4;
+                                    break Block;
+                                }
+
                     
                       /* Cheking error msg for Password field */
                       
-                      if (browser.isElementPresent(PASSWORD_ERROR_MSG))
+              //        if (browser.isElementPresent(PASSWORD_ERROR_MSG))
                     	  
-                    {
-                         pwderrormsg = browser.getText(PASSWORD_ERROR_MSG);
+              //      {
+              //           pwderrormsg = browser.getText(PASSWORD_ERROR_MSG);
 
-                        if (pwderrormsg.contains("This field is required."))
+              //          if (pwderrormsg.contains("This field is required."))
                         	
-                        {
-                            actVal= -3;/*error msg - Password should be atleast 6 characters long.*/                              
+              //          {
+              //              actVal= -3;/*error msg - Password should be atleast 6 characters long.*/                              
                             
-                            break Block;
-                        }
+              //              break Block;
+                //        }
                         
                     }
                       /* Cheking error msg for Confirm Password field */
@@ -373,13 +400,13 @@ public class STRegisterAndSign {
                             actVal= 4;
                         }
                         
-                        else
+                   //     else
                         
-                        {
-                            actVal= -3;/*error msg - Password should be atleast 6 characters long.*/
+                  //      {
+                  //          actVal= -3;/*error msg - Password should be atleast 6 characters long.*/
                             
-                            break Block;
-                        }
+                 //           break Block;
+                 //       }
                     }
                       if (browser.isElementPresent(TERMS_ERROR_MSG))
                     {
@@ -391,7 +418,7 @@ public class STRegisterAndSign {
                         } 
                         else
                         {
-                            actVal= -4;/*error msg - Password should be atleast 6 characters long.*/
+                           // actVal= -4;/*error msg - Password should be atleast 6 characters long.*/
                             
                             break Block;
                         }
