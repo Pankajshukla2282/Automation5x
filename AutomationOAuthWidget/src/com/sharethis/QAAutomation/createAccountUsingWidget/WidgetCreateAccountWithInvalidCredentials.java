@@ -121,7 +121,7 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		
 		/* Execution of SIW_04 */
 		browser.focus(REGISTRATION_PASSWORD1);
-		browser.click(REGISTRATION_PASSWORD_LABEL);		
+		browser.click(REGISTRATION_PASSWORD);		
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
