@@ -58,7 +58,7 @@ public class SharingToLinkedIn {
 			comLib.stLogResult(status, "ST_STM_03", "STOP", red);
 		}else
 		{
-			browser.click(OAUTH_WIDGET_LINKEDIN_BIGICON);
+			//browser.click(OAUTH_WIDGET_LINKEDIN_BIGICON);
 		/* Click on 'Share' link and wait for Done screen */
 		comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_BUTTON, OAUTH_WIDGET_DONE_SCREEN, 0, "");
 		

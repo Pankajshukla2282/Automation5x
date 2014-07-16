@@ -53,7 +53,7 @@ public class SharingToTwitter {
 		status = oauthLogin.stOAuthSignInTwitter(STLDataID, STLExpVal, "");
 		
 		/* Click on 'Share' link and wait for Done screen */
-		browser.click(OAUTH_WIDGET_TWITTER_BIGICON);
+		//browser.click(OAUTH_WIDGET_TWITTER_BIGICON);
 		comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_BUTTON, OAUTH_WIDGET_DONE_SCREEN, 0, "");
 		
 		/* Verifying 'Shared To' Text on Done screen */

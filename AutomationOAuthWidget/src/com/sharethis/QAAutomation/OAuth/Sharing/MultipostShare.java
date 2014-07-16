@@ -54,7 +54,7 @@ public class MultipostShare {
 		//********* FB sign in ************
 		status=oauthLogin.stOAuthSignInFacebook(STLDataID, STLExpVal, "");
 		System.out.println("status of stOAuthSignInFacebook" +status);
-		browser.click(OAUTH_WIDGET_FB_BIGICON);
+		//browser.click(OAUTH_WIDGET_FB_BIGICON);
 		
 		/* Click on 'Share' link and wait for Done screen */
 		status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_BUTTON, OAUTH_WIDGET_DONE_SCREEN, 0, "");

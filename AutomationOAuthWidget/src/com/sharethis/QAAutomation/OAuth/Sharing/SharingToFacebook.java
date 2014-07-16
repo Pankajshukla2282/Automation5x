@@ -59,7 +59,7 @@ public class SharingToFacebook {
 		//********* FB sign in ************
 		status=oauthLogin.stOAuthSignInFacebook(STLDataID, STLExpVal, "");
 		System.out.println("status of stOAuthSignInFacebook" +status);
-		browser.click(OAUTH_WIDGET_FB_BIGICON);
+		//browser.click(OAUTH_WIDGET_FB_BIGICON);
 		
 		//*********Click on FB icon **********
 	    //status=comLib.stClickAndVerifyLink1(OAUTH_WIDGET_FACEBOOK_GREEN_CHECKED_BUTTON1);
