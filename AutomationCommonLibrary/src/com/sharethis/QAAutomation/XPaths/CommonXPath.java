@@ -118,7 +118,7 @@ public class CommonXPath extends TestCase {
 	public static String FACEBOOK_SHARING_LINK ="share";
 	public static String FACEBOOK_POST_CONTENT_AREA ="css=div.-cx-PRIVATE-uiImageBlock__content a.pam div.attachmentText";
 	public static String FACEBOOK_POST_SHARED_TITLE ="css=div.attachmentText div.uiAttachmentTitle strong";
-	public static String FACEBOOK_POST_TITLE = "css=div.uiAttachmentTitle strong";
+	public static String FACEBOOK_POST_TITLE = "//div/div[4]/div/div/div[2]/a";
 	public static String FACEBOOK_HOME_LINK = "css=ul#pageNav.clearfix li#navHome.navItem a.navLink";
 	
 	//*****************GOOGLE SIGN IN PAGE********************
