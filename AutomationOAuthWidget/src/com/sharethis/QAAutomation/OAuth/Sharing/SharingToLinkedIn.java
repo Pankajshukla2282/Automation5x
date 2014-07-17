@@ -67,6 +67,11 @@ public class SharingToLinkedIn {
 		System.out.println(" ST_DS_05 : " +status);
 		comLib.stLogResult(status, "ST_DS_05", "", red);
 		
+		try {
+			Thread.sleep(800000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		//********* Perform Verification sharing on LinkedIn************
 		status = sharing.stLinkedInSharingVerification(STPDataID, STPExpVal, "STOP");
 		

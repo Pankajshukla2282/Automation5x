@@ -61,6 +61,11 @@ public class SharingToTwitter {
 		System.out.println(" ST_DS_06 : " +status);
 		comLib.stLogResult(status, "ST_DS_06", "", red);
 		
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		//********* Perform Verification sharing on Twitter************
 		status = sharing.stTwitterSharingVerification(STPDataID, STPExpVal, "STOP");
 		
