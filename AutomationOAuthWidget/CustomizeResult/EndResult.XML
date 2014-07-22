@@ -57,8 +57,13 @@
 <PASS/>
 <FAIL/>
 </Majorservicessharing>
-<Fastshare PASS="0" FAIL="0" SKIP="0">
+<Fastshare PASS="0" FAIL="0" SKIP="5">
 <SKIP>
+<ST_FS_12/>
+<ST_FS_13/>
+<ST_FS_14/>
+<ST_FS_15/>
+<ST_FS_16/>
 </SKIP>
 <PASS/>
 <FAIL/>
