@@ -192,6 +192,19 @@
 		</classes> 
 	</test> 
 
+	<test name="EnableThroughOauthWidget">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STLDataID" value="8"/>
+			<parameter name="STLExpVal" value="2"/>
+			<parameter name="STBCDataID" value="1"/>
+			<parameter name="STPDataID" value="6"/>
+			<parameter name="STPExpVal" value="0"/>
+			<parameter name="STLBDataID" value="1"/>
+			<class name="com.sharethis.QAAutomation.OAuth.FastShare.EnableThroughOauthWidget"/>
+		</classes> 
+	</test> 
+
 	<test name="DoneScreenLinksVerification">
 		<classes> 
 			<parameter name="STLBExpVal" value="0"/>
