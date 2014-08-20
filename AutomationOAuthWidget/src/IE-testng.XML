@@ -208,6 +208,7 @@
 	<test name="DoneScreenLinksVerification">
 		<classes> 
 			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STBCDataID" value="17"/>
 			<parameter name="STLBDataID" value="3"/>
 			<class name="com.sharethis.QAAutomation.doneScreen.DoneScreenLinksVerification"/>
 		</classes> 

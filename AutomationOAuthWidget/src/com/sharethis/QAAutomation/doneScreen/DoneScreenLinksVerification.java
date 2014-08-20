@@ -1,6 +1,7 @@
 package com.sharethis.QAAutomation.doneScreen;
 
 import static com.sharethis.QAAutomation.XPaths.CommonXPath.*;
+import static com.sharethis.QAAutomation.commonlib.STLaunchBrowser.browser;
 
 import java.util.Vector;
 
@@ -9,22 +10,20 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.sharethis.QAAutomation.commonlib.STCommonLibrary;
-import com.sharethis.QAAutomation.commonlib.STDoneScreen;
 import com.sharethis.QAAutomation.commonlib.STLaunchBrowser;
 
 public class DoneScreenLinksVerification {
 	
 StringBuffer red = new StringBuffer("1");
 	
-	@Parameters({"STLBDataID","STLBExpVal"})
+	@Parameters({"STLBDataID","STLBExpVal", "STBCDataID"})
 	@Test
-	public void test_doneScreenLinksVerification(int STLBDataID, int STLBExpVal)
+	public void test_doneScreenLinksVerification(int STLBDataID, int STLBExpVal, int STBCDataID)
 	{
 		STLaunchBrowser launchBrowser = new STLaunchBrowser();
 		STCommonLibrary comLib = new STCommonLibrary();
 		Vector<String> xPaths = new Vector<String>();
 		Vector<String> errorMsg = new Vector<String>();
-		STDoneScreen stDoneScreen = new STDoneScreen();
 		String status;
 		
 		/* Launch Browser using data in Login Datasheet */
@@ -44,7 +43,12 @@ StringBuffer red = new StringBuffer("1");
 		errorMsg.add(" 'More Link'  Not found");
 		
 		 /*Verifying elements in xPaths vector*/
-		status = comLib.stVerifyObjects(xPaths, errorMsg, "ST_WUF_02");
+		comLib.stVerifyObjects(xPaths, errorMsg, "");
+		/***********************************************************************
+		 * ST_DS_01- This scenario is to verify that Widget get launch.
+		 * 1. Browse to any website.
+		   2. Click on ShareThis chicklet		  
+		 **********************************************************************/
 		
 		/* Cleaning XPaths and errorMsg Vectors for future */
 		xPaths.clear();
@@ -68,16 +72,22 @@ StringBuffer red = new StringBuffer("1");
 		errorMsg.clear();
 		
 		/* Clicking on any post and closing the newly opened landing window */
-		comLib.stClickAndVerifyLink(OAUTH_WIDGET_FIRST_POST_LINK, 1, -1, 1, "");
+		comLib.stClickAndVerifyLink(OAUTH_WIDGET_MORESERVICE_BLOGGER, STBCDataID, 0, 0, "");
 		
-		status=stDoneScreen.stOpenDoneScreen(OAUTH_WIDGET_FIRST_POST_LINK, 1, "");
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
-		/***********************************************************************
-		 * ST_WUF_01- This scenario is to verify that Widget get launch.
-		 * 1. Browse to any website.
-		   2. Click on ShareThis chicklet		  
-		 **********************************************************************/
-		
+		 if(browser.isElementPresent(OAUTH_WIDGET_DONE_SCREEN))
+		 {
+			 status="PASS";
+		 }
+		 else
+		 {
+			 status="FAIL";
+		 }		
 		
 		comLib.stLogResult(status, "ST_DS_01", "STOP", red);
 		

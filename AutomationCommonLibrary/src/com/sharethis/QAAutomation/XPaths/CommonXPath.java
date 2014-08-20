@@ -295,6 +295,7 @@ public class CommonXPath extends TestCase {
     public static String OAUTH_WIDGET_DONE_SCREEN_MESSAGE="css=div#doneScreen.multiShare div#successMsg.qsbMselect div#doneScrMessage span#sharedMsg";
     public static String OAUTH_WIDGET_WORDPRESS_POST_LINK="css=div#outerContainer div#chicklets a#post_wordpress_link.wordpress";
     public static String OAUTH_WIDGET_FIRST_POST_LINK="css=div#chicklets a:nth-child(3)";
+    public static String OAUTH_WIDGET_MORESERVICE_BLOGGER="css=a#post_blogger_link.blogger.ckimg";
     public static String OAUTH_WIDGET_WORDPRESS_CANCEL_LINK ="css=div#outerContainer div#serviceCTAs.sts-cb a#cancelLink.sts-fr:not(.sts-dn)";
     public static String OAUTH_WIDGET_NON_TEXT_AREA="css=div#outerContainer div#serviceCTAs.sts-cb";
     public static String OAUTH_WIDGET_WIDGGET_ERROR_MESSAGE="css=div#outerContainer div#mainBody div#errorMsg:not(.sts-dn)";
