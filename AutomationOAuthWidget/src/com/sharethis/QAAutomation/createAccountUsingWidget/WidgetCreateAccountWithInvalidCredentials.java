@@ -115,8 +115,17 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		
 		/* Logging results for CAW_03 */ 
 		comLib.stLogResult(status, "ST_CAW_03", "", red);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		browser.click(ERROR_MSG_OK_BUTTON);
-		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		
 		
 		/* Execution of SIW_04 */
@@ -160,8 +169,17 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		
 		/* Logging Results for ST_SIW_04 */
 		comLib.stLogResult(status, "ST_SIW_04", "", red);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		browser.click(ERROR_MSG_OK_BUTTON);
-		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		/* Execution of SIW_05 */
 		browser.focus(REGISTRATION_PASSWORD1);
 		browser.click(REGISTRATION_PASSWORD);		
@@ -186,8 +204,17 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		
 		/* Logging Results for ST_SIW_)% */
 		comLib.stLogResult(status, "ST_SIW_05", "", red);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		browser.click(ERROR_MSG_OK_BUTTON);
-		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 			
 		//***********Fill Registartion page**********
 		//* Execution of CAW_02 */
@@ -197,7 +224,17 @@ public class WidgetCreateAccountWithInvalidCredentials {
 		status = register.stClickonRegister(-2, "");
 		
 		comLib.stLogResult(status, "ST_CAW_02", "STOP", red);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		browser.click(ERROR_MSG_OK_BUTTON);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
 		
 		comLib.stTearDown(red);
 
