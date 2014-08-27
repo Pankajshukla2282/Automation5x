@@ -220,7 +220,7 @@ public class CommonXPath extends TestCase {
     public static String GET_FREE_TOOLBAR_BUTTON_CHROME ="//*[@id='toolbar-footer']/div[1]/a/div[text()='ShareThis Bookmarklet']";
     
   //***************WIDGET FAST SHARE****************************
-    public static String FASTSHARE_CHECKMARK_FACEBOOK ="css=span[class*='st_facebook_'] span.stButton img";
+    public static String FASTSHARE_CHECKMARK_FACEBOOK ="css=span.st_facebook_large span.stButton span.stLarge";
     public static String FASTSHARE_CHECKMARK_TWITTER ="css=span[class*='st_twitter_'] span.stButton img";
     public static String FASTSHARE_CHECKMARK_LINKEDIN ="css=span[class*='st_linkedin_'] span.stButton img";
     public static String FASTSHARE_WINDOW_FOOTER ="css=div#fs_mainBody.fsContainer div.fsFooter";
