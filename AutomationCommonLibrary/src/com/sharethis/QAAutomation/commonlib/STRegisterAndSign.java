@@ -329,7 +329,7 @@ public class STRegisterAndSign {
                             /* Cheking error msg for Email field */
                             if(browser.isElementPresent(CONFIRM_PASSWORD_ERROR_MSG) && browser.isElementPresent(PASSWORD_ERROR_MSG))
                             {
-                          	  if(pwderrormsg.contains("Password should be atleast 6 characters long..")&& cnfpwderrormsg.equalsIgnoreCase("Password should be atleast 6 characters long."))
+                          	  if(pwderrormsg.contains("* Password should be atleast 6 characters long..")&& cnfpwderrormsg.equalsIgnoreCase("* Confirm Password should be atleast 6 characters long."))
                           	  {
                           		  actVal = 8;
                           		  break Block; 
