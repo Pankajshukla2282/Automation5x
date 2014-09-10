@@ -214,7 +214,7 @@
 		</classes> 
 	</test> 
 
-	<test name="WidgetCreateAccountWithInvalidCredentials">
+	<test name="WidgetCreateAccountWithExistingEmail">
 		<classes> 
 			<parameter name="STLBExpVal" value="0"/>
 			<parameter name="STRDataID" value="4"/>
