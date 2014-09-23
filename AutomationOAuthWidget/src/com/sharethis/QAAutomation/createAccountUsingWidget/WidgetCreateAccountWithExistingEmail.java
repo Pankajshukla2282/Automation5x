@@ -28,7 +28,7 @@ public class WidgetCreateAccountWithExistingEmail {
 
 	@Parameters( { "STLBDataID", "STLBExpVal", "STRDataID", "STRExpVal", "STBCDataID"})
 	@Test
-	public void test_WidgetCreateAccountWithInvalidEmail(int STLBDataID,
+	public void test_WidgetCreateAccountWithInvalidEmail1(int STLBDataID,
 			int STLBExpVal, int STRDataID, int STRExpVal, int STBCDataID) {
 		
 		STLaunchBrowser launchBrowser = new STLaunchBrowser();
