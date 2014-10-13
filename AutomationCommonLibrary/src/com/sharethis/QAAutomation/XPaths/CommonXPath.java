@@ -257,6 +257,7 @@ public class CommonXPath extends TestCase {
     //public static String OAUTH_WIDGET_MORE_LINK ="css= div#serviceCTAs.sts-cb div#services a#moreLink.widgetIcons";
     public static String OAUTH_WIDGET_MORE_LINK ="css=div#serviceCTAs.sts-cb div.qsbMpad div.footBgColor span#services.flL span#moreLink.emailBright";
     public static String OAUTH_WIDGET_MESSAGE_BOX="css=div#outerContainer div#mainBody div#preShareScreen form#shareDetails textarea#shareMessage";
+    public static String CLICK_HERE_LINK = "css=div.blog-title.content div.title-group.animate span.description a";
     
     //public static String OAUTH_WIDGET_TITLE="css=div#mainBody div#preShareScreen div#articleDetails div.sts-fr h3#headline";
     public static String OAUTH_WIDGET_TITLE="css=div#mainBody div#preShareScreen div.qsbMselect div#articleDetails.qsbMpad5 div.qsbMselectCol2 strong#headline";
