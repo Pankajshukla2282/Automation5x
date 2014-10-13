@@ -225,4 +225,45 @@
 		</classes> 
 	</test> 
 
+	<test name="SharingSplCharTitlewithFacebook">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STPDataID" value="15"/>
+			<parameter name="STPExpVal" value="0"/>
+			<parameter name="STLDataID" value="12"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID1" value="7"/>
+			<parameter name="STBCDataID" value="15"/>
+			<parameter name="STLBDataID" value="4"/>
+			<class name="com.sharethis.QAAutomation.OAuth.Sharing.SharingSplCharTitlewithFacebook"/>
+		</classes> 
+	</test> 
+
+	<test name="SharingSplCharTitlewithTwitter">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STPDataID" value="12"/>
+			<parameter name="STPExpVal" value="0"/>
+			<parameter name="STLDataID" value="5"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID1" value="4"/>
+			<parameter name="STBCDataID" value="13"/>
+			<parameter name="STLBDataID" value="4"/>
+			<class name="com.sharethis.QAAutomation.OAuth.Sharing.SharingSplCharTitlewithTwitter"/>
+		</classes> 
+	</test> 
+
+	<test name="SharingSplCharTitlewithLinkedin">
+		<classes> 
+			<parameter name="STLBExpVal" value="0"/>
+			<parameter name="STPDataID" value="13"/>
+			<parameter name="STPExpVal" value="0"/>
+			<parameter name="STLDataID" value="6"/>
+			<parameter name="STLExpVal" value="0"/>
+			<parameter name="STBCDataID" value="14"/>
+			<parameter name="STLBDataID" value="4"/>
+			<class name="com.sharethis.QAAutomation.OAuth.Sharing.SharingSplCharTitlewithLinkedin"/>
+		</classes> 
+	</test> 
+
 </suite>

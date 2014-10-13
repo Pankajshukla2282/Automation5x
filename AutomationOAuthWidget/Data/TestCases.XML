@@ -41,7 +41,7 @@
 <PASS/>
 <FAIL/>
 </Emailsharing>
-<Majorservicessharing PASS="0" FAIL="0" SKIP="10">
+<Majorservicessharing PASS="0" FAIL="0" SKIP="22">
 <SKIP>
 <ST_DS_01/>
 <ST_DS_03/>
@@ -53,6 +53,18 @@
 <ST_DS_06/>
 <ST_STM_03/>
 <ST_DS_05/>
+<ST_SCFB_01/>
+<ST_SCFB_03/>
+<ST_SCFB_04/>
+<ST_SCFB_02/>
+<ST_STPFB_02/>
+</>
+<ST_SCTW_06/>
+<ST_STPTW_01/>
+</>
+<ST_SCLIN_03/>
+<SCLIN_DS_05/>
+</>
 </SKIP>
 <PASS/>
 <FAIL/>
