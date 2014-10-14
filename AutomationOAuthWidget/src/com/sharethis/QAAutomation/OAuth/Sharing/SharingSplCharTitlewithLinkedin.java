@@ -68,7 +68,7 @@ public class SharingSplCharTitlewithLinkedin {
 		
 		if(status.equalsIgnoreCase("FAIL"))
 		{
-			comLib.stLogResult(status, "ST_SCLIN_03", "STOP", red);
+			comLib.stLogResult(status, "ST_STM_13", "STOP", red);
 		}else
 		{
 			//browser.click(OAUTH_WIDGET_LINKEDIN_BIGICON);
@@ -77,8 +77,8 @@ public class SharingSplCharTitlewithLinkedin {
 		
 		/* Verifying 'Shared To' Text on Done screen */
 		status=stDoneScreen.stVerifySharedToText("LinkedIn",3, "");
-		System.out.println(" SCLIN_DS_05 : " +status);
-		comLib.stLogResult(status, "SCLIN_DS_05", "", red);
+		System.out.println(" ST_DS_14 : " +status);
+		comLib.stLogResult(status, "ST_DS_14", "", red);
 		try {
 			Thread.sleep(800000);
 		} catch (InterruptedException e) {
@@ -87,7 +87,7 @@ public class SharingSplCharTitlewithLinkedin {
 		//********* Perform Verification sharing on LinkedIn************
 		status = sharing.stLinkedInSharingVerification(STPDataID, STPExpVal, "STOP");
 		
-		comLib.stLogResult(status, "ST_SCLIN_03", "STOP", red);
+		comLib.stLogResult(status, "ST_STM_13", "STOP", red);
 		}
 		
 		comLib.stTearDown(red);

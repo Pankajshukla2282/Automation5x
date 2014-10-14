@@ -107,36 +107,36 @@ public class SharingSplCharTitlewithFacebook {
 		if(status.equalsIgnoreCase("PASS"))
 		{
 			/* logging results for ST_DS_01 on success*/
-			System.out.println(" ST_SCFB_01 : " +status);
-			comLib.stLogResult(status, "ST_SCFB_01", "", red);
+			System.out.println(" ST_DS_06 : " +status);
+			comLib.stLogResult(status, "ST_DS_06", "", red);
 
 			/* verifying redirection from 'Get Sharethis' CTA button */
 			comLib.stClickAndVerifyLink(OAUTH_WIDGET_GET_SHARETHIS_CTA_BUTTON, 16, 0, 0, "");
-			System.out.println(" ST_SCFB_03 : " +status);
+			System.out.println(" ST_DS_07 : " +status);
 			//status="PASS";
-			comLib.stLogResult("PASS", "ST_SCFB_03", "", red);
+			comLib.stLogResult("PASS", "ST_DS_07", "", red);
 			
 			/* Verifying 'Shared To' Text on Done screen */
 			status=stDoneScreen.stVerifySharedToText("FB", 1, "");
-			System.out.println(" ST_SCFB_04 : " +status);
-			comLib.stLogResult(status, "ST_SCFB_04", "", red);
+			System.out.println(" ST_DS_08 : " +status);
+			comLib.stLogResult(status, "ST_DS_08", "", red);
 		
 			/* Verification of 'share again' link on Done screen */
 			status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_AGAIN_LINK, OAUTH_WIDGET_EMAIL_BIGICON, 0, "");
-			System.out.println(" ST_SCFB_02 : " +status);
-			comLib.stLogResult(status, "ST_SCFB_02", "", red);	
+			System.out.println(" ST_DS_09 : " +status);
+			comLib.stLogResult(status, "ST_DS_09", "", red);	
 		}
 		else
 		{
-			comLib.stLogResult(status, "ST_SCFB_01", "", red);	
+			comLib.stLogResult(status, "ST_DS_06", "", red);	
 		}
 		
 		
 		//********* Perform Verification sharing on Facebook************
 		status = sharing.stFacebookSharingVerification(STPDataID, STPExpVal, "STOP");
-		System.out.println(" ST_STPFB_02 : " +status);
+		System.out.println(" ST_STM_10 : " +status);
 		
-		comLib.stLogResult(status, "ST_STPFB_02", "STOP", red);		
+		comLib.stLogResult(status, "ST_STM_10", "STOP", red);		
 		
 		comLib.stTearDown(red);
 

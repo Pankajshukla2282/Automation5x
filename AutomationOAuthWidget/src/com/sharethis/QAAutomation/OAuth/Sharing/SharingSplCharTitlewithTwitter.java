@@ -71,13 +71,13 @@ public class SharingSplCharTitlewithTwitter {
 		
 		/* Verifying 'Shared To' Text on Done screen */
 		status=stDoneScreen.stVerifySharedToText("Twitter",2, "");
-		System.out.println(" ST_SCTW_06 : " +status);
-		comLib.stLogResult(status, "ST_SCTW_06", "", red);
+		System.out.println(" ST_DS_12 : " +status);
+		comLib.stLogResult(status, "ST_DS_12", "", red);
 		
 		//********* Perform Verification sharing on Twitter************
 		status = sharing.stTwitterSharingVerification(STPDataID, STPExpVal, "STOP");
 		
-		comLib.stLogResult(status, "ST_STPTW_01", "STOP", red);		
+		comLib.stLogResult(status, "ST_STM_11", "STOP", red);		
 		
 		comLib.stTearDown(red);
 
