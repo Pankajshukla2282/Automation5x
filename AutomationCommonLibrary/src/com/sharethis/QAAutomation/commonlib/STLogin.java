@@ -658,6 +658,16 @@ public class STLogin {
 				e.printStackTrace();
 			}	
 			
+			if(browser.isElementPresent(AUTHORIZE_APP))
+			{
+				comLib.stClick(AUTHORIZE_APP, "Authorize app button absent on twitter.com", "STOP");
+		    	try {
+					Thread.sleep(30000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}	
+			}
+			
 	    	String allwindowtitle [] = browser.getAllWindowTitles();
 	    	int Numberofwindows= allwindowtitle.length;
 	    	System.out.println("No of open windows=" + Numberofwindows);

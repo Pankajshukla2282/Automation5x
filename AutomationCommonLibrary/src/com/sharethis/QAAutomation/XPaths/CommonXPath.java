@@ -150,6 +150,7 @@ public class CommonXPath extends TestCase {
 	public static String TWITTER_SIGNIN_USERNAME="css=div.placeholding-input input#signin-email.text-input";
 	public static String TWITTER_SIGNIN_PASSWORD="css=div.placeholding-input input#signin-password.text-input";
 	public static String TWITTER_SIGNIN_SIGNIN_BUTTON="css=td.flex-table-secondary button.submit";
+	public static String AUTHORIZE_APP = "css=div#bd div.auth form#oauth_form fieldset.buttons input#allow.submit.button.selected";
     
   //*****************LINKEDIN SIGN IN PAGE********************
     //public static String SIGNIN_LINKEDIN_USERNAME = "css=div#frame-contents div#body div.wrapper form.standard-form ul li.email-input div.fieldgroup input#session_key-oauthAuthorizeForm";
