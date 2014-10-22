@@ -220,7 +220,7 @@ public class STSharing {
         	browser.selectWindow(newwindowtitle);
         	
         	/* Clicking on Home link to refresh the FB wall */
-			comLib.stClick(FACEBOOK_HOME_LINK, "Facebook Home link not found on FB wall", "");
+			//comLib.stClick(FACEBOOK_HOME_LINK, "Facebook Home link not found on FB wall", "");
 			
         	try {
 				Thread.sleep(25000);
