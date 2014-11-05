@@ -218,15 +218,19 @@ public class STOAuthSignIn {
 				e.printStackTrace();
 			}	
 			
-			if(browser.isElementPresent(AUTHORIZE_APP))
-			{
-				comLib.stClick(AUTHORIZE_APP, "Authorize app button absent on twitter.com", "STOP");
-		    	try {
-					Thread.sleep(30000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}	
-			}
+			try {
+				if(browser.isElementPresent(AUTHORIZE_APP))
+				{
+					comLib.stClick(AUTHORIZE_APP, "Authorize app button absent on twitter.com", "STOP");
+			    	try {
+						Thread.sleep(30000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}	
+				}
+			} catch (Exception e) {
+				System.out.println("Exception here");
+			}	
 			
 	    	String allwindowtitle [] = browser.getAllWindowTitles();
 	    	int Numberofwindows= allwindowtitle.length;
