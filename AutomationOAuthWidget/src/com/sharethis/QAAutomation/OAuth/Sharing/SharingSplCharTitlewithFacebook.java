@@ -11,6 +11,7 @@ import static com.sharethis.QAAutomation.XPaths.CommonXPath.OAUTH_WIDGET_SHARE_B
 import static com.sharethis.QAAutomation.XPaths.CommonXPath.OAUTH_WIDGET_TOOLBAR_UPSELL_DIV;
 import static com.sharethis.QAAutomation.XPaths.CommonXPath.OAUTH_WIDGET_TOOLBAR_UPSELL_IMAGE;
 import static com.sharethis.QAAutomation.XPaths.CommonXPath.OAUTH_WIDGET_WINDOW;
+import static com.sharethis.QAAutomation.XPaths.CommonXPath.OAUTH_WIDGET_TWITTER_BIGICON;
 
 import java.util.Vector;
 
@@ -122,7 +123,7 @@ public class SharingSplCharTitlewithFacebook {
 			comLib.stLogResult(status, "ST_DS_08", "", red);
 		
 			/* Verification of 'share again' link on Done screen */
-			status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_AGAIN_LINK, OAUTH_WIDGET_EMAIL_BIGICON, 0, "");
+			status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_AGAIN_LINK, OAUTH_WIDGET_TWITTER_BIGICON, 0, "");
 			System.out.println(" ST_DS_09 : " +status);
 			comLib.stLogResult(status, "ST_DS_09", "", red);	
 		}

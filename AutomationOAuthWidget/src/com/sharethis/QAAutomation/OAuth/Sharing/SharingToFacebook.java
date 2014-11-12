@@ -104,7 +104,7 @@ public class SharingToFacebook {
 			comLib.stLogResult(status, "ST_DS_04", "", red);
 		
 			/* Verification of 'share again' link on Done screen */
-			status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_AGAIN_LINK, OAUTH_WIDGET_EMAIL_BIGICON, 0, "");
+			status=comLib.stClickAndVerify(OAUTH_WIDGET_SHARE_AGAIN_LINK, OAUTH_WIDGET_TWITTER_BIGICON, 0, "");
 			System.out.println(" ST_DS_02 : " +status);
 			comLib.stLogResult(status, "ST_DS_02", "", red);	
 		}

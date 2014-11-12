@@ -174,7 +174,7 @@ public class WidgetUIVerification {
 	else
 	{	
 	/* Clicking on 'Back to default view' link */
-	comLib.stClickAndVerify(OAUTH_WIDGET_BACK_TO_DEFAULT_VIEW_LINK, OAUTH_WIDGET_EMAIL_BIGICON, 0, "STOP");
+	comLib.stClickAndVerify(OAUTH_WIDGET_BACK_TO_DEFAULT_VIEW_LINK, OAUTH_WIDGET_TWITTER_BIGICON, 0, "STOP");
 	
 	xPaths.add(OAUTH_WIDGET_EMAIL_LABEL);
 	errorMsg.add("'Back to Default View' link clicked, but Widget header not present ");
