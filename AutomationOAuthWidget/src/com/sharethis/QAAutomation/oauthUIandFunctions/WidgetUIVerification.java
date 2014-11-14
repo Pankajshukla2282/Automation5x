@@ -95,8 +95,8 @@ public class WidgetUIVerification {
 	xPaths.add(OAUTH_DO_NOT_TRACK_LINK);
 	errorMsg.add("Do Not Track Link not found");
 	
-	xPaths.add(OAUTH_WIDGET_EMAIL_BIGICON);
-	errorMsg.add("Email Icon Not found");
+	//xPaths.add(OAUTH_WIDGET_EMAIL_BIGICON);
+	//errorMsg.add("Email Icon Not found");
 	
 	xPaths.add(OAUTH_WIDGET_FB_BIGICON);
 	errorMsg.add("FB Icon Not found");
